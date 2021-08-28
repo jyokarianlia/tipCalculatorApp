@@ -8,35 +8,36 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <div id="app">
-    <img src="images/logo.svg" alt="logo">
+    <img class="imgLogo" src="images/logo.svg" alt="logo">
     
     <div class="contenedor">
       <div class="bloque1">
         <div class="sectionBill">
           <label for="bill">Bill</label>
-          <span><img src="images/icon-dollar.svg" alt="icon-dollar"></span>
           <input type="text" id="bill" placeholder="0">
+          <span><img src="images/icon-dollar.svg" alt="icon-dollar"></span>
         </div>
 
         <div class="seccionPorcentaje">
           <label>Select Tip %</label>
-          <div><input type="radio" name="porcentaje" id="5"><label for="5">5%</label></div>
-          <div><input type="radio" name="porcentaje" id="10"><label for="10">10%</label></div>
-          <div><input type="radio" name="porcentaje" id="15"><label for="15">15%</label></div>
-          <div><input type="radio" name="porcentaje" id="25"><label for="25">25%</label></div>
-          <div><input type="radio" name="porcentaje" id="50"><label for="50">50%</label></div>
-          <div><input type="text" placeholder="Custom"></div>
+          <div><input type="radio" name="porcentaje" id="5" class="input"><label for="5">5%</label></div>
+          <div><input type="radio" name="porcentaje" id="10" class="input"><label for="10">10%</label></div>
+          <div><input type="radio" name="porcentaje" id="15" class="input"><label for="15">15%</label></div>
+          <div><input type="radio" name="porcentaje" id="25" class="input"><label for="25">25%</label></div>
+          <div><input type="radio" name="porcentaje" id="50" class="input"><label for="50">50%</label></div>
+          <div class="custom"><input type="text" class="txtCustom" placeholder="Custom"></div>
         </div>
 
         <div class="sectionPersonas">
           <label for="numPersonas">Number of People</label>
-          <span><img src="images/icon-person.svg" alt="icon-person"></span>
           <input type="text" id="numPersonas" placeholder="0">
+          <span><img src="images/icon-person.svg" alt="icon-person"></span>
         </div>
       </div>
 
