@@ -9,10 +9,13 @@ $Light-grayish-cyan: hsl(185, 41%, 84%);
 $Light-grayish-cyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
 
+html { box-sizing: border-box; }
+
+*, *:before, *:after { box-sizing: inherit; }
+
 body {
     font-size: 24px;
     font-family: 'Space Mono', monospace;
 }
-
 
 .attribution { font-size: 11px; text-align: center; a { color: hsl(228, 45%, 44%); } }
