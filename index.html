@@ -20,7 +20,7 @@
       <div class="bloque1">
         <div class="sectionBill">
           <label for="bill">Bill</label>
-          <input type="text" id="bill" placeholder="0">
+          <input type="number" id="bill" placeholder="0">
           <span><img src="images/icon-dollar.svg" alt="icon-dollar"></span>
         </div>
 
@@ -31,12 +31,12 @@
           <div :class="p15"><input type="radio" name="porcentaje" id="15" class="input"><label for="15">15%</label></div>
           <div :class="p25"><input type="radio" name="porcentaje" id="25" class="input"><label for="25">25%</label></div>
           <div :class="p50"><input type="radio" name="porcentaje" id="50" class="input"><label for="50">50%</label></div>
-          <div class="custom" :class="pcustom"><input type="text" class="txtCustom" placeholder="Custom"></div>
+          <div class="custom" :class="pcustom"><input type="number" class="txtCustom" placeholder="Custom"></div>
         </div>
 
         <div class="sectionPersonas">
           <label for="numPersonas">Number of People</label>
-          <input type="text" id="numPersonas" placeholder="0">
+          <input type="number" id="numPersonas" placeholder="0">
           <span><img src="images/icon-person.svg" alt="icon-person"></span>
         </div>
       </div>
