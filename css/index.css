@@ -30,6 +30,7 @@ body {
   width: 100vw;
   border-radius: 1em 1em 0px 0px;
   color: #7f9c9f;
+  padding-bottom: .5em;
 }
 
 #app .contenedor .bloque1 {
@@ -38,6 +39,14 @@ body {
 
 #app .contenedor .bloque1 .sectionBill {
   text-align: left;
+}
+
+#app .contenedor .bloque1 .sectionBill input:hover {
+  cursor: pointer;
+}
+
+#app .contenedor .bloque1 .sectionBill input:focus {
+  border-color: rgba(244, 250, 250, 0.3);
 }
 
 #app .contenedor .bloque1 .sectionBill label {
@@ -141,6 +150,63 @@ body {
 
 #app .contenedor .bloque1 .sectionPersonas span img {
   width: .7em;
+}
+
+#app .contenedor .bloque2 {
+  background-color: #5e7a7d;
+  border-radius: 9px;
+  padding: 1em .4em;
+  margin: .8em;
+}
+
+#app .contenedor .bloque2 .subBloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+#app .contenedor .bloque2 .subBloque label {
+  width: 38%;
+  color: #c5e4e7;
+  font-size: .65em;
+}
+
+#app .contenedor .bloque2 .subBloque label span {
+  color: white;
+  font-weight: 700;
+}
+
+#app .contenedor .bloque2 .subBloque .span {
+  background-color: #5e7a7d;
+  color: #26c0ab;
+  text-align: right;
+  font-size: 2em;
+  font-weight: 700;
+  border: none;
+  width: 84%;
+}
+
+#app .contenedor .bloque2 .pos2 {
+  margin: 1em 0px;
+}
+
+#app .contenedor button {
+  width: 100%;
+  border: none;
+  padding: .5em;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 1.3em;
+  border-radius: 6px;
+  color: #00494d;
+  text-transform: uppercase;
+  background-color: #26c0ab;
 }
 
 .attribution {

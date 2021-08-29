@@ -34,12 +34,23 @@ body {
         width: 100vw;
         border-radius: 1em 1em 0px 0px;
         color: $Dark-grayish-cyan2;
+        padding-bottom: .5em;
 
         .bloque1 {
             padding: 1em;
 
             .sectionBill {
                 text-align: left;
+
+                input{
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        border-color: rgba($color: $Light-grayish-cyan2, $alpha: 0.3);
+                    }
+                }
 
                 label {
                     display: block;
@@ -139,6 +150,58 @@ body {
                     }
                 }
             }
+        }
+
+        .bloque2 {
+            background-color: $Dark-grayish-cyan;
+            border-radius: 9px;
+            padding: 1em .4em;
+            margin: .8em;
+            
+            .subBloque {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: left;
+
+                label {
+                    width: 38%;
+                    color: $Light-grayish-cyan;
+                    font-size: .65em;
+
+                    span {
+                        color: $White;
+                        font-weight: 700;
+                    }
+                }
+
+                .span {
+                    background-color: $Dark-grayish-cyan;
+                    color: $Strong-cyan;
+                    text-align: right;
+                    font-size: 2em;
+                    font-weight: 700;
+                    border: none;
+                    width: 84%;
+                }
+            }
+
+            .pos2 {
+                margin: 1em 0px;
+            }
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            padding: .5em;
+            font-size: 1em;
+            font-weight: 700;
+            margin-top: 1.3em;
+            border-radius: 6px;
+            color: $Very-dark-cyan;
+            text-transform: uppercase;
+            background-color: $Strong-cyan;
         }
     }
 }
