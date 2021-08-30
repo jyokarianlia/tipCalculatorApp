@@ -8,5 +8,15 @@ const app = new Vue ({
         tipAmoun: '',
         totPerson: ''
     },
-    methods: {}
+    methods: {},
+    computed: {
+        porcent() {
+            if (this.pcustom != '') {
+                this.radio = '';
+                return this.pcustom;
+            } else {
+                return this.radio;
+            }
+        }
+    }
 })

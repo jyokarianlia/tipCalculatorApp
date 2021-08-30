@@ -85,19 +85,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: .7em;
 }
 
-#app .contenedor .bloque1 .seccionPorcentaje label {
+#app .contenedor .bloque1 .seccionPorcentaje .label {
   display: block;
 }
 
-#app .contenedor .bloque1 .seccionPorcentaje label:hover {
+#app .contenedor .bloque1 .seccionPorcentaje .label .dnone {
+  display: none;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .label:hover {
   cursor: pointer;
 }
 
@@ -119,9 +120,18 @@ body {
   display: none;
 }
 
+#app .contenedor .bloque1 .seccionPorcentaje div label {
+  display: block;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje div label:hover {
+  cursor: pointer;
+}
+
 #app .contenedor .bloque1 .seccionPorcentaje .selected {
   background-color: #c5e4e7;
   border: 3px solid #7f9c9f;
+  color: #5e7a7d;
 }
 
 #app .contenedor .bloque1 .seccionPorcentaje .custom {

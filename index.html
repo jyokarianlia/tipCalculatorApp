@@ -25,12 +25,12 @@
         </div>
 
         <div class="seccionPorcentaje">
-          <label>Select Tip %</label>
-          <div :class="{selected : radio == 'p5'}"><input type="radio" id="5" name="porcentaje" class="input" value="p5" v-model="radio"><label for="5">5%</label></div>
-          <div :class="{selected : radio == 'p10'}"><input type="radio" id="10" name="porcentaje" class="input" value="p10" v-model="radio"><label for="10">10%</label></div>
-          <div :class="{selected : radio == 'p15'}"><input type="radio" id="15" name="porcentaje" class="input" value="p15" v-model="radio"><label for="15">15%</label></div>
-          <div :class="{selected : radio == 'p25'}"><input type="radio" id="25" name="porcentaje" class="input" value="p25" v-model="radio"><label for="25">25%</label></div>
-          <div :class="{selected : radio == 'p50'}"><input type="radio" id="50" name="porcentaje" class="input" value="p50" v-model="radio"><label for="50">50%</label></div>
+          <label class="label">Select Tip {{ porcent }}<label :class="{dnone : radio != ''}">%</label></label>
+          <div :class="{selected : radio == '5%'}"><input type="radio" id="5" name="porcentaje" class="input" value="5%" v-model="radio"><label for="5">5%</label></div>
+          <div :class="{selected : radio == '10%'}"><input type="radio" id="10" name="porcentaje" class="input" value="10%" v-model="radio"><label for="10">10%</label></div>
+          <div :class="{selected : radio == '15%'}"><input type="radio" id="15" name="porcentaje" class="input" value="15%" v-model="radio"><label for="15">15%</label></div>
+          <div :class="{selected : radio == '25%'}"><input type="radio" id="25" name="porcentaje" class="input" value="25%" v-model="radio"><label for="25">25%</label></div>
+          <div :class="{selected : radio == '50%'}"><input type="radio" id="50" name="porcentaje" class="input" value="50%" v-model="radio"><label for="50">50%</label></div>
           <div class="custom"><input type="number" class="txtCustom" placeholder="Custom" v-model="pcustom"></div>
         </div>
 

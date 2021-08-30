@@ -87,12 +87,15 @@ body {
             .seccionPorcentaje {
                 text-align: left;
                 display: flex;
-                justify-content: center;
                 flex-wrap: wrap;
                 gap: .7em;
 
-                label {
+                .label {
                     display: block;
+
+                    .dnone {
+                        display: none;
+                    }
                     
                     &:hover{
                         cursor: pointer;
@@ -115,11 +118,20 @@ body {
                     .input {
                         display: none;
                     }
+
+                    label {
+                        display: block;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
                 }
 
                 .selected {
                     background-color: $Light-grayish-cyan;
                     border: 3px solid $Dark-grayish-cyan2;
+                    color: $Dark-grayish-cyan;
                 }
 
                 .custom {
