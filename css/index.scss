@@ -92,7 +92,11 @@ body {
                 gap: .7em;
 
                 label {
-                    width: 100%;
+                    display: block;
+                    
+                    &:hover{
+                        cursor: pointer;
+                    }
                 }
 
                 div {
@@ -104,9 +108,18 @@ body {
                     border-radius: 5px;
                     padding: .4em .2em;
 
+                    &:hover {
+                        cursor: pointer;
+                    }
+
                     .input {
                         display: none;
                     }
+                }
+
+                .selected {
+                    background-color: $Light-grayish-cyan;
+                    border: 3px solid $Dark-grayish-cyan2;
                 }
 
                 .custom {

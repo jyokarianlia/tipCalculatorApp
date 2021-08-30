@@ -94,7 +94,11 @@ body {
 }
 
 #app .contenedor .bloque1 .seccionPorcentaje label {
-  width: 100%;
+  display: block;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje label:hover {
+  cursor: pointer;
 }
 
 #app .contenedor .bloque1 .seccionPorcentaje div {
@@ -107,8 +111,17 @@ body {
   padding: .4em .2em;
 }
 
+#app .contenedor .bloque1 .seccionPorcentaje div:hover {
+  cursor: pointer;
+}
+
 #app .contenedor .bloque1 .seccionPorcentaje div .input {
   display: none;
+}
+
+#app .contenedor .bloque1 .seccionPorcentaje .selected {
+  background-color: #c5e4e7;
+  border: 3px solid #7f9c9f;
 }
 
 #app .contenedor .bloque1 .seccionPorcentaje .custom {
