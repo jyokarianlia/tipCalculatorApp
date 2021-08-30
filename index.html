@@ -25,7 +25,7 @@
         </div>
 
         <div class="seccionPorcentaje">
-          <label class="label">Select Tip {{ porcent }}<label :class="{dnone : radio != ''}">%</label></label>
+          <label class="label">Select Tip {{ computedPorcent }}<label :class="{dnone : radio != ''}">%</label></label>
           <div :class="{selected : radio == '5%'}"><input type="radio" id="5" name="porcentaje" class="input" value="5%" v-model="radio"><label for="5">5%</label></div>
           <div :class="{selected : radio == '10%'}"><input type="radio" id="10" name="porcentaje" class="input" value="10%" v-model="radio"><label for="10">10%</label></div>
           <div :class="{selected : radio == '15%'}"><input type="radio" id="15" name="porcentaje" class="input" value="15%" v-model="radio"><label for="15">15%</label></div>
@@ -36,7 +36,7 @@
 
         <div class="sectionPersonas">
           <label for="numPersonas">Number of People</label>
-          <input type="number" id="numPersonas" placeholder="0">
+          <input type="number" id="numPersonas" placeholder="0" v-model="numPerson">
           <span><img src="images/icon-person.svg" alt="icon-person"></span>
         </div>
       </div>
@@ -44,15 +44,15 @@
       <div class="bloque2">
         <div class="subBloque">
           <label><span>Tip Amount</span><br>/ person</label>
-          <label class="span">$0.00</label>
+          <label class="span"> ${{ computedTipAmoun }} </label>
         </div>
 
         <div class="subBloque pos2">
           <label><span>Total</span><br>/ person</label>
-          <label class="span">$0.00</label>
+          <label class="span"> ${{ computedTotPerson }} </label>
         </div>
 
-        <button>Reset</button>
+        <button @click="reset">Reset</button>
       </div>
     </div>
   </div>

@@ -247,6 +247,11 @@ body {
   background-color: #26c0ab;
 }
 
+#app .contenedor button:hover {
+  background-color: #c5e4e7;
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

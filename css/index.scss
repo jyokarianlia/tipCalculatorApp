@@ -244,6 +244,11 @@ body {
             color: $Very-dark-cyan;
             text-transform: uppercase;
             background-color: $Strong-cyan;
+
+            &:hover {
+                background-color: $Light-grayish-cyan;
+                cursor: pointer;
+            }
         }
     }
 }
