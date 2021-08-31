@@ -59,6 +59,20 @@ const app = new Vue ({
             } else {
                 return '0.00';
             }
+        },
+        dinbloc() {
+            if (Number(this.bill) > 0 && (this.radio != '' || Number(this.pcustom) > 0) && Number(this.numPerson) == '') {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        disable() {
+            if (Number(this.bill) > 0 && (this.radio != '' || Number(this.pcustom) > 0)) {
+                return false;
+            } else {
+                return true;
+            }
         }
     }
 })

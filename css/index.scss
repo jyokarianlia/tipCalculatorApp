@@ -172,10 +172,11 @@ body {
 
                 label {
                     font-size: .73em;
+                    margin-left: -1.6em;
                 }
 
                 .nozero {
-                    width: 50%;
+                    width: 55%;
                     color: red;
                     display: none;
                     font-size: .65em;
@@ -273,6 +274,11 @@ body {
                 cursor: pointer;
             }
         }
+
+        .isDisabled {
+            background-color: $Dark-grayish-cyan2;
+            color: $Light-grayish-cyan;
+        }
     }
 
     @media (min-width: 720px) {
@@ -294,6 +300,12 @@ body {
                 .seccionPorcentaje {
                     div {
                         width: 30%;
+                    }
+                }
+
+                .sectionPersonas {
+                    .dinbloc {
+                        display: inline-block;
                     }
                 }
             }

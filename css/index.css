@@ -177,10 +177,11 @@ body {
 
 #app .contenedor .bloque1 .sectionPersonas label {
   font-size: .73em;
+  margin-left: -1.6em;
 }
 
 #app .contenedor .bloque1 .sectionPersonas .nozero {
-  width: 50%;
+  width: 55%;
   color: red;
   display: none;
   font-size: .65em;
@@ -282,6 +283,11 @@ body {
   cursor: pointer;
 }
 
+#app .contenedor .isDisabled {
+  background-color: #7f9c9f;
+  color: #c5e4e7;
+}
+
 @media (min-width: 720px) {
   #app {
     height: 900px;
@@ -304,6 +310,9 @@ body {
   }
   #app .contenedor .bloque1 .seccionPorcentaje div {
     width: 30%;
+  }
+  #app .contenedor .bloque1 .sectionPersonas .dinbloc {
+    display: inline-block;
   }
   #app .contenedor .bloque2 {
     padding: 1.5em;
